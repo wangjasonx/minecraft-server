@@ -3,6 +3,21 @@ variable "admin_ip" {
   description = "Whitelisted ip for SSH access to EC2 instance"
 }
 
+variable "ami_image" {
+  type        = string
+  description = "ami image for EC2 instance"
+}
+
+variable "bucket_name" {
+  type = string
+  description = "Name of S3 bucket that is being created to persist files"
+}
+
+variable "instance_type" {
+  type        = string
+  description = "EC2 Instance type"
+}
+
 variable "server_region" {
   type        = string
   description = "The region that the EC2 instance will be created"
