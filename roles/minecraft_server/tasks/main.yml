@@ -1,0 +1,6 @@
+---
+- name: Install Dependencies
+  ansible.builtin.include_tasks: install-dependencies.yml
+
+- name: Initialize Minecraft Server
+  ansible.builtin.include_tasks: initialize-mc-server.yml
